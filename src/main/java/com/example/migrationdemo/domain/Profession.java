@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Reference;
 
 import javax.persistence.*;
 
@@ -13,18 +12,12 @@ import javax.persistence.*;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "tb_user")
-public class User {
+@Table(name = "tb_profession")
+public class Profession {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String name;
-
-    private int age;
-
-    @ManyToOne
-    @JoinColumn(name = "profession")
-    private Profession profession;
 }
