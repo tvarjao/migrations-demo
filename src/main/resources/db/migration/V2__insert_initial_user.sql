@@ -1,0 +1,1 @@
+insert into "user"(id, name, age) values (1,  'Antonio Conselheiro', 57);
