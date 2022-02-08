@@ -3,3 +3,5 @@ CREATE TABLE tb_profession (
 	name varchar(500) NOT NULL,
 	CONSTRAINT profession_pkey PRIMARY KEY (id)
 );
+
+ALTER TABLE tb_user ADD COLUMN profession int8;
